@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>To Do List</title>
+</head>
+<body>
+    <!--시계-->
+    <div id="clock">00:00</div>
+
+    <!--로그인 창-->
+    <form id="login-form" class="hidden">
+        <input
+            id="login-form__input"
+            required
+            type="text"
+            placeholder="What is your name?"
+        />
+        <input id="login-form__submit" type="submit" value="Log In"/>
+    </form>
+
+    <!--인사-->
+    <h1 id="greeting"></h1>
+
+    <!--할일-->
+    <form id="todo-form">
+        <input type="text" placeholder="What do you have to do today?">
+    </form>
+    <ul id="todo-list"></ul>
+
+    <!--날씨-->
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+<script src="js/clock.js"></script>
+<script src="js/login.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/background.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>
